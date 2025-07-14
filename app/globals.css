@@ -4,28 +4,38 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
+    /* Darker background, lighter foreground for contrast */
+    --background: 220 15% 8%; /* Very dark blue/gray */
+    --foreground: 210 40% 98%; /* Light gray */
+
+    /* Card and popover surfaces - slightly lighter than background for depth */
+    --card: 220 15% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary and accent colors - vibrant to stand out */
+    --primary: 200 90% 60%; /* Brighter Cyan */
+    --primary-foreground: 220 15% 8%; /* Dark text on primary */
+    --secondary: 250 80% 65%; /* Brighter Purple */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 15% 15%; /* Muted dark for subtle elements */
+    --muted-foreground: 215.4 16.3% 60%; /* Lighter gray for muted text */
+    --accent: 280 90% 70%; /* Brighter Pink/Magenta */
+    --accent-foreground: 220 15% 8%;
+
+    /* Destructive colors */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+
+    /* Borders and inputs */
+    --border: 220 15% 20%; /* Darker border */
+    --input: 220 15% 20%;
+    --ring: 200 90% 60%; /* Ring matches primary accent */
     --radius: 0.75rem;
   }
 
+  /* Dark mode is now the default, so this block is less critical but kept for consistency */
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
